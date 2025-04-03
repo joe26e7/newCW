@@ -13,7 +13,15 @@ header {
     padding: 1rem 0;
     text-align: center;
     border-radius: 10px;
+    
+    margin-bottom: 20px;
 }
+
+header h1 {
+    font-size: 2.5rem;
+    color: #333;
+}
+
 nav {
     text-align: center;
 }
@@ -24,6 +32,7 @@ footer {
     padding: 14px 20px;
     border: 1px solid #ccc;
     border-radius: 10px;
+    font-style: italic;
 }
 
 
@@ -31,7 +40,26 @@ main {
     min-height: 1200px;
     text-align: center;
     background-color: white;
+    background-color: white; 
+    max-width: 90%; 
+    margin-left: auto; 
+    margin-right: auto; 
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
     
+}
+
+h1 {
+    font-size: 3rem; 
+    
+    text-align: center; 
+    margin-bottom: 20px; 
+    font-weight: bold;   
+    line-height: 1.2;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); 
+    font-family: 'Helvetica Neue', sans-serif;
+
 }
 
 
@@ -39,6 +67,10 @@ main {
 nav {
     display: flex;
     background-color: white;
+    justify-content: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
    
 }
  
@@ -47,6 +79,7 @@ nav a {
     padding: 14px 20px;
     text-decoration: none;
     text-align: center;
+
 }
  
 nav a:hover {
@@ -55,7 +88,8 @@ nav a:hover {
 }
 
 form{
-    background-color: white;
+    background-color: blanchedalmond;
+    min-height: 50px;
     Padding: 60px;
     margin: 40px auto;
     width: 60%;
@@ -69,14 +103,14 @@ form textarea {
     width: 100%;
     padding: 10px;
     margin: 10px 0;
-    border: 1px solid grey ;
+    border: 1px solid grey;
     border-radius: 5px;
     font-size: 1em;
 
 }
 
 form input [type="submit"] {
-    background-color: #00004d;
+    background-color: hsl(240, 100%, 15%);
     color: #ff007f;
     border: none;
     cursor: pointer;
@@ -96,5 +130,11 @@ form input [type="submit"] {
 .post h1 {
     color: #00004d;
 }
+
+.about h1 {
+    color: blue;
+}
+ 
+
 
 

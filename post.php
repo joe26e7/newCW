@@ -1,5 +1,11 @@
 <?php
 
+
+
+session_start();
+
+
+
     include("dbsetup.php");
 
     //handle the form submission 

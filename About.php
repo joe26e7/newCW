@@ -1,3 +1,12 @@
+<?php
+
+session_start();
+
+include("dbsetup.php");
+?>
+
+
+
 <!DOCTYPE html>
 <html>
     <head>
@@ -17,14 +26,14 @@
         <nav>
             <ul>
             <a href="index.php">Home</a>
-            <a href="recipe.php">Recipies</a>
+            <a href="recipe.php">Recipes</a>
             <a href="About.php">About</a>
             <a href="contact.php">Contacts</a>
             <a href="post.php">Post</a>
             </ul>
         </nav>
 
-        <a href="post.php">Create a new Recipe</a>
+       
 
         <main>
             <h1>Welcome to our about page !</h1>
@@ -39,6 +48,8 @@
             <p>sharing your recipies is a great way to learn new cooking recipies you can try at home for yourself or family and friends whether thats a samll snack or whole meal</p>
            
         </main>
+
+        <a href="post.php">Create a new Recipe</a>
 
         
     

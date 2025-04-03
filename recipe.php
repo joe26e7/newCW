@@ -1,6 +1,12 @@
 <?php
 include('dbsetup.php');
 
+
+
+session_start();
+
+
+
 //varibles for use outside the if/else struvture - can be used later on down the page 
     $search_term = "";
     $result = null;
@@ -37,7 +43,7 @@ include('dbsetup.php');
 
     <body>
         <header>
-            <h1>Recipies</h1>
+            <h1>Recipes</h1>
 
 
 
@@ -45,7 +51,7 @@ include('dbsetup.php');
 
         <nav>
             <a href="index.php">Home</a>
-            <a href="recipe.php">recipie</a>
+            <a href="recipe.php">Recipes</a>
             <a href="About.php">About</a>
             <a href="contact.php">Contacts</a>
             <a href="post.php">Post</a>
@@ -80,10 +86,7 @@ include('dbsetup.php');
 
 
             ?>
-             <p>
-                <a href="index.php">Back Home !</a>
-
-            </p>
+           
 
 
 
@@ -97,6 +100,10 @@ include('dbsetup.php');
             </div>-->
 
         </main>
+        <p>
+                <a href="index.php">Back Home !</a>
+
+            </p>
 
         <footer>
             <span>&copy: SERC
