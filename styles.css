@@ -35,11 +35,10 @@ footer {
     font-style: italic;
 }
 
-
+ 
 main {
     min-height: 1200px;
     text-align: center;
-    background-color: white;
     background-color: white; 
     max-width: 90%; 
     margin-left: auto; 
@@ -51,14 +50,16 @@ main {
 }
 
 h1 {
-    font-size: 3rem; 
-    
+    font-size: 1.8rem; 
     text-align: center; 
-    margin-bottom: 20px; 
+    margin-top: 10px; 
     font-weight: bold;   
     line-height: 1.2;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); 
     font-family: 'Helvetica Neue', sans-serif;
+    padding-top: 40px;
+    
+   
 
 }
 
@@ -89,7 +90,7 @@ nav a:hover {
 
 form{
     background-color: blanchedalmond;
-    min-height: 50px;
+    min-height: 10px;
     Padding: 60px;
     margin: 40px auto;
     width: 60%;

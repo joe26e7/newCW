@@ -69,13 +69,13 @@ if($_SERVER["REQUEST_METHOD"] == "POST")
 
 ?>
 
-<!DOCTYPE html>
+<!DOCTYPE html> 
 <html>
 
 
 
     <head>
-        <title>Register new account</title>
+        <title>Register new account</title> 
         <link rel="stylesheet" type="text/css" href="styles.css">
     <head>
 

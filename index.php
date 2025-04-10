@@ -36,11 +36,11 @@ include("dbsetup.php");
 
             <?php
 
-                if (isset($_SESSION["user_name"]) == TRUE) // if the user is logged in
+                if (isset($_SESSION["user_name"]) == TRUE) 
                     {
                         echo("<a href='LOGOUT.PHP'>log out</a>");
                     }
-                    else // IF USER IS NOT LOGGED IN  
+                    else  
                     {
                         echo("<a href='register.php'>Register</a>");
                         echo("<a href='login.php'>Log in</a>");

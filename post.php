@@ -8,22 +8,24 @@ session_start();
 
     include("dbsetup.php");
 
-    //handle the form submission 
+    
 
-    if ($_SERVER['REQUEST_METHOD'] == "POST") // If the user has subbmitted the form 
+    if ($_SERVER['REQUEST_METHOD'] == "POST")  
     {
-        //pull the data out of the post request 
+        
         $title = $_POST["title"];
-        $content =$_POST["content"];
+        $servings = $_POST["servings"];
+        $ingrediants = $_POST["ingrediants"];
+        $instructions = $_POST["instructions"];
 
-        //enter title and content as a new record in our blog database tabvle 
-        $sql = "INSERT INTO posts (title, content) VALUES (?, ?)"; //parameterised query to prevent sql injection attacks 
+        
+        $sql = "INSERT INTO recipes (title, servings, ingrediants, instructions) VALUES (?, ?, ?, ?)"; 
         $stmt = $connection->prepare($sql);
-        $stmt->bind_param("ss", $title, $content);
+        $stmt->bind_param("siss", $title, $servings, $ingrediants, $instructions);  
 
-        if ($stmt->execute() == TRUE ) // if the execution was successful 
+        if ($stmt->execute() == TRUE ) 
         {
-            header("location: recipe.php"); //redirects user to blog.php page 
+            header("location: recipe.php");  
 
         }
         else
@@ -66,12 +68,21 @@ session_start();
 
 
         <main>
+
+        <h1>Make your creations here and upload them to the recipe page for everyone to see !</h1>
         <form action="post.php" method="POST">
+
             <label for ="title">Post Title:</label><br>
             <input type="text" name="title" required><br><br>
 
-            <label for="content">Post Content:</label><br>
-            <textarea name="content" rows ="10" cols="50"></textarea><br>
+            <label for="servings">Servings:</label><br>
+            <textarea name="servings" rows ="1" cols="5"></textarea><br>
+
+            <label for="ingrediants">Ingrediants:</label><br>
+            <textarea name="ingrediants" rows ="5" cols="50"></textarea><br>
+
+            <label for="instructions">Instructions:</label><br>
+            <textarea name="instructions" rows ="10" cols="50"></textarea><br>
 
             <input type="submit" value="Create recipe">
 

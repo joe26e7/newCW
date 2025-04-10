@@ -7,7 +7,7 @@ function authenticate_user($username, $password, $connection)
 {
    
     $sql = "SELECT * FROM users WHERE username = ?";
-
+ 
     $stmt = $connection->prepare($sql);
     $stmt->bind_param("s", $username);
     $stmt->execute();
